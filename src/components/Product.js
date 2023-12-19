@@ -29,6 +29,7 @@ const Product = ({ products }) => {
                     <div className="px-6 pt-4 pb-2">
                         {
                             <>
+
                                 {localstorage?.some((i) => i.id === product.id) && (
                                     <button
                                         onClick={() => handleRemoveToCart(product.id)}
